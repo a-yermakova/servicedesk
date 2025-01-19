@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "servicedesk"
+version = "0.1.0"
+description = ""
+authors = ["a-yermakova <ertya0909@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.6"
+uvicorn = "^0.34.0"
+psycopg2-binary = "^2.9.10"
+sqlalchemy = "^2.0.37"
+celery = {extras = ["redis"], version = "^5.4.0"}
+pydantic = {extras = ["dotenv"], version = "^2.10.5"}
+aioredis = "^2.0.1"
+alembic = "^1.14.0"
+python-dotenv = "^1.0.1"
+asyncpg = "^0.30.0"
+imapclient = "^3.0.1"
+gevent = "^24.11.1"
+pytest = "^8.3.4"
+httpx = "^0.28.1"
+pytest-asyncio = "^0.25.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
